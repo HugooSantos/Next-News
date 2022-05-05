@@ -1,3 +1,4 @@
+import { GetServerSideProps } from 'next'
 import Head from 'next/head'
 import { SubscribeButton } from '../components/subscribeButton'
 import styles from './home.module.scss'
@@ -22,4 +23,10 @@ export default function Home() {
     </>
 
   )
+}
+export const getServerSideProps: GetServerSideProps  = async () => {
+
+  return {
+    props:{}
+  }
 }
